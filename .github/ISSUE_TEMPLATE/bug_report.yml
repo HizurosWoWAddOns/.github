@@ -1,25 +1,26 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
+name: 🐛Bug Report
+description: File a bug report here
+title: "[BUG]: "
 labels: ["bug"]
-assignees:
-  - octocat
+assignees: ["hizuro"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+
   - type: dropdown
     id: client-version
     attributes:
       label: WoW client
       description: What client flavor are you running?
       options:
-        - Retail (Default)
-        - The burning crusade classic
-        - Classic
+        - WoW Retail
+        - WoW TBC Classic
+        - WoW Classic
     validations:
       required: true
+
   - type: textarea
     id: what-happened
     attributes:
@@ -29,6 +30,7 @@ body:
       value: "A bug happened!"
     validations:
       required: false
+
   - type: textarea
     id: lua-error-message
     attributes:
@@ -37,3 +39,4 @@ body:
       render: lua
     validations:
       required: false
+
