@@ -144,6 +144,8 @@ do
 			Mixin(creditSection,credits.args);
 		else
 			-- add own sub option table
+			LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable(addon.."/Credits", credits);
+			LibStub("AceConfigDialog-3.0"):AddToBlizOptions(addon.."/Credits", "Credits", addon);
 		end
 	end
 end
