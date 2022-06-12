@@ -26,8 +26,17 @@ do
 		print(colorize(...));
 	end
 
-	function ns.debug(name,...)
+	function ns.debug(...)
 		ConsolePrint(date("|cff999999%X|r"),colorize("<debug>",...));
+	end
+
+	function ns.debugPrint(...)
+		if not ns.debugMode then return end
+		print(colorize("<debug>",...));
+	end
+
+	if ns.debugMode then
+		_G[addon.."_Namespace"] = ns
 	end
 end
 
