@@ -4,7 +4,7 @@ This repo is created to have a README for my organisation and some shared things
 Thats cool. ;-)
 
 ## HizurosSharedTools.lua
-This file is for my addons to shared some functions. Specially my credit page generator for mention my supports. ;-)
+This file is for my addons to shared some functions. Specially my credit page generator for mention my supporters. ;-)
 
 ## my sources
 - https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile
