@@ -5,13 +5,13 @@ local _G,string,tonumber,rawset,type = _G,string,tonumber,rawset,type
 
 --== colorized print ==--
 do
-	local colors = {"22aaff","00ff00","ff6060","44ffff","ffff00","ff8800","ff44ff","ffffff"};
+	local colors = {"20b0ff","00ff00","ff6060","44ffff","ffff00","ff8800","ff44ff","ffffff"};
 
 	local function colorize(...)
 		local t,c,a1 = {tostringall(...)},1,...;
 		if type(a1)=="boolean" then tremove(t,1); end
 		if a1~=false then
-			tinsert(t,1,"|cff82c5ff"..((a1==true and ns.addon_short) or (a1=="||" and "||") or addon).."|r"..(a1~="||" and HEADER_COLON or ""));
+			tinsert(t,1,"|cff"..colors[1]..((a1==true and ns.addon_short) or (a1=="||" and "||") or addon).."|r"..(a1~="||" and HEADER_COLON or ""));
 			c=2;
 		end
 		for i=c, #t do
@@ -129,13 +129,13 @@ do
 			support_Header = { type = "header",      order = 200, hidden = IsSectionVisible, name = "" },
 			support        = { type = "description", order = 201, fontSize="large", name = "Thanks @ all supporter." },
 			Github_Header  = { type = "header",      order = 202, hidden = IsSectionVisible, name = "Github" },
-			Github         = { type = "description", order = 203, hidden = IsSectionVisible, name = AddSupporter },
+			Github         = { type = "description", order = 203, hidden = IsSectionVisible, name = AddSupporter, fontSize="medium" },
 			Patreon_Header = { type = "header",      order = 204, hidden = IsSectionVisible, name = "Patreon" },
-			Patreon        = { type = "description", order = 205, hidden = IsSectionVisible, name = AddSupporter },
+			Patreon        = { type = "description", order = 205, hidden = IsSectionVisible, name = AddSupporter, fontSize="medium" },
 			Paypal_Header  = { type = "header",      order = 206, hidden = IsSectionVisible, name = "Paypal" },
-			Paypal         = { type = "description", order = 207, hidden = IsSectionVisible, name = AddSupporter },
+			Paypal         = { type = "description", order = 207, hidden = IsSectionVisible, name = AddSupporter, fontSize="medium" },
 			Locale_Header  = { type = "header",      order = 208, hidden = IsSectionVisible, name = "Localizations" },
-			Locale         = { type = "description", order = 209, hidden = IsSectionVisible, name = AddSupporter },
+			Locale         = { type = "description", order = 209, hidden = IsSectionVisible, name = AddSupporter, fontSize="medium" },
 		}
 	};
 
