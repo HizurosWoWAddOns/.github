@@ -2,6 +2,7 @@ name: packager alpha
 
 on:
   push:
+    branches: [ $default-branch ]
     tags:
       - '*-alpha[0-9]*'
 

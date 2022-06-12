@@ -2,6 +2,7 @@ name: packager
 
 on:
   push:
+    branches: [ $default-branch ]
     tags:
       - '*-release[0-9]*'
       - '*-beta[0-9]*'
