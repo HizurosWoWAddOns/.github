@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this bug report.
 
   - type: dropdown
     id: client-version
@@ -16,7 +16,7 @@ body:
       description: What client flavor are you running?
       options:
         - WoW Retail
-        - WoW TBC Classic
+        - WoW Classic WotLk
         - WoW Classic
     validations:
       required: true
